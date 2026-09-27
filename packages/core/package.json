@@ -1,0 +1,9 @@
+{
+  "name": "@rps/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Domain model, simulation engine, default strategy adapters, and the local SimulationPort adapter.",
+  "exports": { ".": "./src/index.ts" },
+  "dependencies": { "@rps/contracts": "0.1.0" }
+}
