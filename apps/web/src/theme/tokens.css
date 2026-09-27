@@ -1,0 +1,26 @@
+/* Palette tokens. Light by default, dark via prefers-color-scheme, both overridable with [data-theme]. */
+:root {
+  --bg: #eef0ec; --panel: #f8f9f6; --ink: #1b211e; --ink2: #48524d; --muted: #6c7570; --line: #d5dad3; --grid: #e3e7e1;
+  --water: #2878a8; --energy: #b5820f; --carbon: #b8452f;
+  --good: #2f7d4f; --warn: #a86a00; --bad: #b3261e;
+  --t1: #1b211e; --t2: #6c7570; --t3: #9aa39e;
+  --display: "Chakra Petch", "Bahnschrift", "DIN Alternate", system-ui, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #121614; --panel: #1a1f1c; --ink: #e6ebe7; --ink2: #b4bdb8; --muted: #8c9691; --line: #2c3430; --grid: #232a26;
+    --water: #3d8fc4; --energy: #b8891a; --carbon: #d8485f;
+    --good: #5fb683; --warn: #d9a13a; --bad: #ef6a5e;
+    --t1: #e6ebe7; --t2: #8c9691; --t3: #5c6661;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121614; --panel: #1a1f1c; --ink: #e6ebe7; --ink2: #b4bdb8; --muted: #8c9691; --line: #2c3430; --grid: #232a26;
+  --water: #3d8fc4; --energy: #b8891a; --carbon: #d8485f;
+  --good: #5fb683; --warn: #d9a13a; --bad: #ef6a5e;
+  --t1: #e6ebe7; --t2: #8c9691; --t3: #5c6661;
+}
