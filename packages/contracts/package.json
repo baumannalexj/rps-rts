@@ -1,0 +1,8 @@
+{
+  "name": "@rps/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Types and interfaces only. No runtime code. Every other package depends on this; nothing here depends on anything.",
+  "exports": { ".": "./src/index.ts" }
+}
